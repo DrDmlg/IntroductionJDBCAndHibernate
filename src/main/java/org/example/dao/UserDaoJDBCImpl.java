@@ -3,6 +3,7 @@ package org.example.dao;
 import org.example.model.User;
 import org.example.util.Util;
 
+import javax.sql.RowSet;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
