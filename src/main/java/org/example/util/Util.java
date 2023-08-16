@@ -65,4 +65,22 @@ public class Util {
         }
         return sessionFactory;
     }
+
+
+    public static SessionFactory getSessionFactoryProperties() { //Не максимально устаревший метод(чуть новее)
+        if (Objects.isNull(sessionFactory)) {
+            try {
+                Configuration configuration = new Configuration();
+                configuration.addAnnotatedClass(User.class);
+
+                StandardServiceRegistryBuilder serviceRegistry = new StandardServiceRegistryBuilder()
+                        .applySettings(configuration.getProperties());
+
+                sessionFactory = configuration.buildSessionFactory(serviceRegistry.build());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return sessionFactory;
+    }
 }
