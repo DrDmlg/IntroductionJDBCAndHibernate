@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -77,6 +78,19 @@ public class Util {
                         .applySettings(configuration.getProperties());
 
                 sessionFactory = configuration.buildSessionFactory(serviceRegistry.build());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return sessionFactory;
+    }
+
+    public static SessionFactory getSessionFactory() {
+        if (Objects.isNull(sessionFactory)) {
+            try {
+//                Configuration configuration = new Configuration().configure();
+//                sessionFactory = configuration.buildSessionFactory();
+                sessionFactory = new Configuration().configure().buildSessionFactory();
             } catch (Exception e) {
                 e.printStackTrace();
             }
