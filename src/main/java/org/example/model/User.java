@@ -2,9 +2,7 @@ package org.example.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
 import javax.persistence.*;
-
 
 @Getter
 @Setter

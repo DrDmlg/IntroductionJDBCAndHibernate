@@ -10,7 +10,7 @@ class UserServiceHibernateImplTest extends UserServiceTest {
 
     private UserService userService = new UserServiceHibernateImpl();
 
-    @BeforeEach //запуск метода до начала каждого метода
+    @BeforeEach
     public void testTuning() {
         userService.dropUserTable();
         userService.createUserTable();

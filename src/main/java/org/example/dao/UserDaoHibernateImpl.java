@@ -1,6 +1,5 @@
 package org.example.dao;
 
-import com.mysql.cj.MysqlxSession;
 import org.example.model.User;
 import org.example.util.Util;
 import org.hibernate.HibernateException;
@@ -9,7 +8,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 

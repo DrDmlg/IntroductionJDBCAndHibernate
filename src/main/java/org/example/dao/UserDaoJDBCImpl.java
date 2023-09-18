@@ -3,7 +3,6 @@ package org.example.dao;
 import org.example.model.User;
 import org.example.util.Util;
 
-import javax.sql.RowSet;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +16,6 @@ public class UserDaoJDBCImpl implements UserDao {
         String sql = "CREATE TABLE IF NOT EXISTS user (id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(45), lastName VARCHAR(45), age TINYINT(3) )";
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -28,7 +26,6 @@ public class UserDaoJDBCImpl implements UserDao {
         String sql = "DROP TABLE IF EXISTS user";
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -82,7 +79,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 String name = resultSet.getString("name");
                 String lastName = resultSet.getString("lastName");
                 byte age = resultSet.getByte("age");
-
                 User user = new User(id, name, lastName, age);
                 users.add(user);
             }

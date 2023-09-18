@@ -1,7 +1,6 @@
 package org.example.service;
 
 import org.example.model.User;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +10,7 @@ class UserServiceJDBCImplTest extends UserServiceTest {
 
     private UserService userService = new UserServiceJDBCImpl();
 
-    @BeforeEach //запуск метода до начала каждого метода
+    @BeforeEach
     public void testTuning() {
         userService.dropUserTable();
         userService.createUserTable();

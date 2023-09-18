@@ -3,7 +3,6 @@ package org.example.service;
 import org.example.dao.UserDao;
 import org.example.dao.UserDaoHibernateImpl;
 import org.example.model.User;
-
 import java.util.List;
 
 public class UserServiceHibernateImpl implements UserService {
