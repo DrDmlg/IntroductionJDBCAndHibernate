@@ -1,17 +1,15 @@
-## Учебный проект по JDBC и Hibernate с использованием Lombok
-Этот учебный проект создан с целью демонстрации основных операций CRUD (Create, Read, Update, Delete) 
-в базах данных с использованием JDBC и Hibernate. Проект также включает в себя библиотеку Lombok для более удобной работы с объектами данных,
-систему сборки Maven и фреймворк для тестирования JUnit Jupiter.
+## Educational Project on JDBC and Hibernate with Lombok
+This educational project is created to demonstrate the basic CRUD (Create, Read, Update, Delete) operations in databases using JDBC and Hibernate. The project also incorporates the Lombok library for more convenient handling of data objects, the Maven build system, and the JUnit Jupiter testing framework.
 
-## Особенности
-- Операции CRUD с использованием JDBC и Hibernate.
-- Использование библиотеки Lombok для автоматической генерации геттеров, сеттеров и других методов.
-- Система сборки Maven для управления зависимостями и сборкой проекта.
-- Тестирование с использованием JUnit Jupiter.
-
-## Установка
-Склонируйте репозиторий на свой локальный компьютер:
+## Features
+- CRUD operations using JDBC and Hibernate.
+- Utilization of the Lombok library for automatic generation of getters, setters, and other methods.
+- Maven build system for managing dependencies and project build.
+- Testing with JUnit Jupiter.
+  
+## Installation
+Clone the repository to your local machine:
 - git clone https://github.com/DrDmlg/IntroductionJDBCAndHibernate.git
 
-## Связь
-Если у вас есть какие-либо вопросы или предложения, вы можете связаться с мной по адресу dorokhov.did@gmail.com или через страницу GitHub.
+## Contact
+If you have any questions or suggestions, feel free to reach out to me at dorokhov.did@gmail.com or through my GitHub page.
